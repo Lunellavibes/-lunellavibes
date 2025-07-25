@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lunellavibes</title>
 
     <style>
@@ -10,6 +12,7 @@
         font-family: 'Georgia', serif;
         padding: 2rem;
         line-height: 1.7;
+        margin: 0;
       }
 
       header {
@@ -37,11 +40,25 @@
         padding: 0.7rem 1.2rem;
         text-decoration: none;
         border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+      }
+
+      .ritual-cta .btn:hover {
+        background-color: #a5927a;
       }
 
       .what-you-find ul {
         list-style: none;
         padding-left: 0;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .what-you-find li {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
       }
 
       footer {
@@ -50,30 +67,45 @@
         color: #7a7a7a;
         margin-top: 4rem;
       }
+
+      footer a {
+        color: #7a7a7a;
+        text-decoration: none;
+        margin: 0 0.5rem;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
     </style>
-  <header>
-    <h1>LUNELLAVIBES</h1>
-    <p class="tagline">Luxury isn’t excess. It’s peace, intention, and power reclaimed.</p>
-  </header>
+  </head>
 
-  <section class="ritual-cta">
-    <h2>✨ Claim Your Ritual</h2>
-    <p>Download your free soft-luxury ritual and start your alignment journey.</p>
-    <a href="ritual.pdf" class="btn">Download Now</a>
-  </section>
+  <body>
+    <header>
+      <h1>LUNELLAVIBES</h1>
+      <p class="tagline">Luxury isn’t excess. It’s peace, intention, and power reclaimed.</p>
+    </header>
 
-  <section class="what-you-find">
-    <h2>What You’ll Find Here</h2>
-    <ul>
-      <li>🌿 Self-care rituals to reclaim your inner space</li>
-      <li>🌍 Travel-inspired slow-luxury vibes</li>
-      <li>💬 Digital tools for your soft & smart empowerment</li>
-    </ul>
-  </section>
+    <section class="ritual-cta">
+      <h2>✨ Claim Your Ritual</h2>
+      <p>Download your free soft-luxury ritual and start your alignment journey.</p>
+      <a href="INIZIA.pdf" class="btn" download>Download Now</a>
+    </section>
 
-  <footer>
-    <p>Follow us:</p>
-    <a href="https://instagram.com/lunellavibes" target="_blank">Instagram</a> |
-    <a href="https://www.tiktok.com/@lunella.vibes?_t=ZN-8yKdRZgw3t8&_r=1" target="_blank">TikTok</a>
-    <p>© 2025 Lunellavibes. All rights reserved.</p>
-  </footer>
+    <section class="what-you-find">
+      <h2>What You’ll Find Here</h2>
+      <ul>
+        <li>🌿 Self-care rituals to reclaim your inner space</li>
+        <li>🌍 Travel-inspired slow-luxury vibes</li>
+        <li>💬 Digital tools for your soft & smart empowerment</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Follow us:</p>
+      <a href="https://instagram.com/lunellavibes" target="_blank" rel="noopener noreferrer">Instagram</a> |
+      <a href="https://www.tiktok.com/@lunella.vibes?_t=ZN-8yKdRZgw3t8&_r=1" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <p>© 2025 Lunellavibes. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
