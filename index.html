@@ -6,6 +6,20 @@
   <title>Lunellavibes</title>
 
   <style>
+  <script>
+  const dropdownLabel = document.querySelector('.dropdown-label');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+
+  dropdownLabel.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('show');
+  });
+
+  window.addEventListener('click', (e) => {
+    if (!dropdownLabel.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.remove('show');
+    }
+  });
+</script>
     body {
       background-color: #fdfcfa;
       color: #2e2e2e;
@@ -13,6 +27,14 @@
       padding: 2rem;
       line-height: 1.7;
       margin: 0;
+      <div class="dropdown">
+  <div class="dropdown-label">☾ Explore</div>
+  <div class="dropdown-menu">
+    <a href="#travel">Travel</a>
+    <a href="#luxury">Luxury</a>
+    <a href="#rituals">Download Rituals</a>
+  </div>
+</div>
     }
 
     header {
