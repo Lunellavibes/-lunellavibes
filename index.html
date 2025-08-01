@@ -6,28 +6,6 @@
   <title>Lunellavibes</title>
 
   <style>
-  <script>
-  const dropdownLabel = document.querySelector('.dropdown-label');
-  const dropdownMenu = document.querySelector('.dropdown-menu');
-
-  dropdownLabel.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('show');
-    <div class="dropdown">
-  <div class="dropdown-label">☾ Explore</div>
-  <div class="dropdown-menu">
-    <a href="#travel">Travel</a>
-    <a href="#luxury">Luxury</a>
-    <a href="#rituals">Download Rituals</a>
-  </div>
-</div>
-  });
-
-  window.addEventListener('click', (e) => {
-    if (!dropdownLabel.contains(e.target) && !dropdownMenu.contains(e.target)) {
-      dropdownMenu.classList.remove('show');
-    }
-  });
-</script>
     body {
       background-color: #fdfcfa;
       color: #2e2e2e;
@@ -35,7 +13,6 @@
       padding: 2rem;
       line-height: 1.7;
       margin: 0;
-      
     }
 
     header {
@@ -47,6 +24,49 @@
       font-size: 1.2rem;
       color: #a08f7b;
       margin-top: 0.5rem;
+    }
+
+    /* Dropdown Styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .dropdown-label {
+      font-weight: bold;
+      font-size: 18px;
+      color: #7a6e5f;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #fffdf9;
+      min-width: 160px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .dropdown-menu a {
+      color: #2e2e2e;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #f4ece4;
+    }
+
+    .show {
+      display: block;
     }
 
     .ritual-cta {
@@ -108,15 +128,14 @@
     <h1>LUNELLAVIBES</h1>
     <p class="tagline">Luxury isn’t excess. It’s peace, intention, and power reclaimed.</p>
 
-    <!-- Dropdown Navigation -->
-    <div style="margin-top: 20px;">
-      <label for="menu" style="font-weight: bold;">☰ Explore</label>
-      <select id="menu" onchange="location = this.value;" style="margin-left: 10px; padding: 5px;">
-        <option value="#">Select</option>
-        <option value="#travel">Travel Guides</option>
-        <option value="#luxury">Luxury Rituals</option>
-        <option value="#downloads">Ritual Downloads</option>
-      </select>
+    <!-- Custom Dropdown -->
+    <div class="dropdown">
+      <div class="dropdown-label">☾ Explore</div>
+      <div class="dropdown-menu">
+        <a href="#travel">Travel</a>
+        <a href="#luxury">Luxury</a>
+        <a href="#downloads">Download Rituals</a>
+      </div>
     </div>
   </header>
 
@@ -215,5 +234,21 @@
     <a href="https://www.tiktok.com/@lunella.vibes?_t=ZN-8yKdRZgw3t8&_r=1" target="_blank">TikTok</a>
     <p>© 2025 Lunellavibes. All rights reserved.</p>
   </footer>
+
+  <!-- Dropdown Script -->
+  <script>
+    const dropdownLabel = document.querySelector('.dropdown-label');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    dropdownLabel.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('show');
+    });
+
+    window.addEventListener('click', (e) => {
+      if (!dropdownLabel.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.remove('show');
+      }
+    });
+  </script>
 </body>
 </html>
