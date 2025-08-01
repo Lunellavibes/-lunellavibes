@@ -237,12 +237,21 @@
 
   <!-- Dropdown Script -->
   <script>
-    const dropdownLabel = document.querySelector('.dropdown-label');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
+  const dropdownLabel = document.querySelector('.dropdown-label');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
 
-    dropdownLabel.addEventListener('click', () => {
-      dropdownMenu.classList.toggle('show');
-    });
+  dropdownLabel.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('show');
+    dropdownLabel.classList.toggle('active');
+  });
+
+  window.addEventListener('click', (e) => {
+    if (!dropdownLabel.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.remove('show');
+      dropdownLabel.classList.remove('active');
+    }
+  });
+</script>
 
     window.addEventListener('click', (e) => {
       if (!dropdownLabel.contains(e.target) && !dropdownMenu.contains(e.target)) {
