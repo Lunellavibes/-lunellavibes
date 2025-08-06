@@ -5,19 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lunellavibes</title>
-
   <style>
     body {
-      background-color: #fffbfd;
-      color: #333333;
+      background-color: #fff8fc;
+      color: #333;
       font-family: 'Georgia', serif;
       padding: 2rem;
-      line-height: 1.7;
       margin: 0;
+      line-height: 1.6;
     }
 
     a {
-      color: #333333;
+      color: #333;
+      text-decoration: none;
     }
 
     header {
@@ -27,97 +27,82 @@
 
     .tagline {
       font-size: 1.2rem;
-      color: #b8a2a7;
-      margin-top: 0.5rem;
+      color: #d3a6ba;
+      margin-top: 0.3rem;
     }
 
-    /* Dropdown Styles */
     .dropdown {
       position: relative;
       display: inline-block;
-      text-align: center;
       margin-top: 1.5rem;
     }
 
     .dropdown-label {
       font-weight: bold;
       font-size: 18px;
-      color: #8e7982;
+      color: #72615f;
       cursor: pointer;
       user-select: none;
       padding: 8px 12px;
       border-radius: 6px;
-      background-color: #ffe7f4;
+      background-color: #fcd9ed;
       transition: background 0.3s;
     }
 
     .dropdown-label:hover {
-      background-color: #ffd3ee;
+      background-color: #f9c2e1;
     }
 
     .dropdown-menu {
       display: none;
       position: absolute;
-      background-color: #fff6fb;
+      background-color: #fff2fa;
       min-width: 160px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
-      z-index: 1;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
       border-radius: 10px;
-      overflow: hidden;
       margin-top: 10px;
-      right: 0;
       left: 0;
+      right: 0;
+      z-index: 1;
     }
 
     .dropdown-menu a {
-      color: #333333;
-      padding: 12px 16px;
-      text-decoration: none;
+      padding: 12px 18px;
       display: block;
-      font-size: 16px;
+      font-size: 15px;
+      color: #333;
     }
 
     .dropdown-menu a:hover {
-      background-color: #fbe3f0;
+      background-color: #f6e4ef;
     }
 
     .dropdown.open .dropdown-menu {
       display: block;
     }
 
+    .travel-card img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
     .ritual-cta {
-      background: #fff2f7;
+      background: #ffeaf4;
       padding: 1.5rem;
       border-radius: 10px;
       margin: 2rem 0;
       text-align: center;
     }
 
-    .ritual-cta .btn {
-      background-color: #e3b4c8;
-      color: white;
+    .btn {
+      background-color: #d79bb5;
+      color: #fff;
       padding: 0.7rem 1.2rem;
-      text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
       display: inline-block;
-      transition: background-color 0.3s ease;
-    }
-
-    .ritual-cta .btn:hover {
-      background-color: #c78da8;
-    }
-
-    .what-you-find ul {
-      list-style: none;
-      padding-left: 0;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    .what-you-find li {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
+      margin-top: 1rem;
     }
 
     footer {
@@ -126,148 +111,107 @@
       color: #666;
       margin-top: 4rem;
     }
-
-    footer a {
-      color: #666;
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 
 <body>
   <header>
     <h1>LUNELLAVIBES</h1>
-    <p class="tagline">Luxury isn’t excess. It’s peace, intention, and power reclaimed.</p>
+    <p class="tagline">Soft power. Slow rebellion. Everyday rituals.</p>
 
-    <!-- Custom Dropdown -->
     <div class="dropdown" id="dropdown">
-      <div class="dropdown-label">☾ Explore</div>
+      <div class="dropdown-label">Explore</div>
       <div class="dropdown-menu">
         <a href="#travel">Travel</a>
-        <a href="#luxury">Luxury</a>
-        <a href="#downloads">Download Rituals</a>
+        <a href="#luxury">Rituals</a>
+        <a href="#downloads">Downloads</a>
       </div>
     </div>
   </header>
 
-  <p style="font-style: italic; font-size: 18px; margin-top: 10px; color: #888; text-align:center;">
-    “Rituals of stillness, elegance and intentional living.”
-  </p>
-
-  <section style="margin-top: 30px; padding: 20px;">
-    <h2 style="font-size: 22px;">About Lunellavibes</h2>
-    <p style="font-size: 16px; line-height: 1.5;">
-      Lunellavibes is a soft-luxury portal where elegance meets rituals, travel becomes inner stillness, and digital experiences awaken beauty.
-      <br><br>
-      Curated with love, designed to empower.
-    </p>
+  <section style="margin-top:30px;padding:20px;">
+    <h2>About Lunellavibes</h2>
+    <p>Where tenderness meets rebellion. A baby-pink punk portal tracing softness, independence and beauty. Slow rituals across shifting geographies.</p>
   </section>
 
-  <!-- TRAVEL GUIDES -->
-  <section id="travel" style="margin-top: 40px; padding: 20px;">
-    <h2 style="font-size: 24px; text-align: center; margin-bottom: 20px;">🌿 Curated Travel Guides</h2>
+  <!-- TRAVEL SECTION -->
+  <section id="travel" style="margin-top:40px;padding:20px;">
+    <h2 style="text-align:center;margin-bottom:20px;">Curated Travel Guides</h2>
 
-   <section id="como-section" style="background: #f9f7f8; color: #333;">
-  <div style="max-width: 800px; margin: auto; padding: 2rem; text-align: center;">
-    <h2 style="font-family: 'Arial', sans-serif;">Benvenuti a Como</h2>
-    <img src="images/comolake/lago-como-tramonto.jpg" alt="Lago di Como al tramonto" style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p>Scopri la magia del Lago di Como con le sue ville storiche, i sentieri panoramici e l'atmosfera unica.</p>
-  </div>
-</section>
-
-
-    <div style="margin-bottom: 30px;">
-      <img src="https://images.unsplash.com/photo-1603468341846-759b2c4b102f" alt="Marrakech" style="width: 100%; border-radius: 10px;">
-      <h3 style="font-size: 20px; margin-top: 10px;">🧡 Marrakech — Rituals in Amber Light</h3>
-      <p style="font-size: 16px; color: #555;">Palace stays, spice markets, and hammam serenity. Incense, tiles, and golden dusk.</p>
+    <!-- Como Card -->
+    <div class="travel-card" style="margin-bottom:30px;">
+      <img src="images/comolake/como-lake-soft.jpg" alt="Lake Como" />
+      <h3 style="font-size:20px;margin-top:10px;">Lake Como — The Art of Stillness</h3>
+      <p style="font-size:15px;color:#555;">Velvet mornings, pale waters and quiet persistence.</p>
     </div>
 
-    <div style="margin-bottom: 30px;">
-      <img src="https://images.unsplash.com/photo-1611312448650-04bc6df1c9de" alt="Istanbul" style="width: 100%; border-radius: 10px;">
-      <h3 style="font-size: 20px; margin-top: 10px;">💙 Istanbul — Where Silk Meets the Sky</h3>
-      <p style="font-size: 16px; color: #555;">Ottoman mosaics, hammam rituals, rooftop tea. A slow dance between continents.</p>
+    <!-- Marrakech Placeholder for future local folder "marrakech" -->
+    <div class="travel-card" style="margin-bottom:30px;">
+      <img src="images/marrakech/marrakech-soft.jpg" alt="Marrakech" />
+      <h3 style="font-size:20px;margin-top:10px;">Marrakech — Dust & Ritual</h3>
+      <p style="font-size:15px;color:#555;">Terracotta breeze, cold tiles, jasmine prayers.</p>
     </div>
   </section>
 
   <!-- LUXURY RITUALS -->
-  <section id="luxury" style="margin-top: 60px; padding: 20px; background-color: #fff6fb; border-radius: 12px;">
-    <h2 style="font-size: 24px; text-align: center; margin-bottom: 20px;">💎 Luxury Rituals & Inspirations</h2>
-
-    <div style="display: flex; flex-direction: column; gap: 20px;">
+  <section id="luxury" style="margin-top:60px;padding:20px;background-color:#fff2fa;border-radius:12px;">
+    <h2 style="text-align:center;margin-bottom:20px;">Everyday Luxury Rituals</h2>
+    <div style="display:flex;flex-direction:column;gap:20px;">
       <div>
-        <img src="https://images.unsplash.com/photo-1605549440796-8e5c03e1345b" alt="Spa Ritual" style="width: 100%; border-radius: 10px;">
-        <h3 style="font-size: 18px; margin-top: 10px;">Morning Spa Ritual</h3>
-        <p style="font-size: 15px; color: #444;">Start your day with silence, steam, and rose water. Light a candle, sip jasmine tea, and feel the calm before creation.</p>
+        <img src="images/rituals/spa-soft.jpg" alt="Morning Spa Ritual" style="width:100%;border-radius:10px;">
+        <h3 style="font-size:18px;margin-top:10px;">Morning Steam</h3>
+        <p style="font-size:15px;color:#444;">Hot water, sharp eyeliner, silence.</p>
       </div>
-
       <div>
-        <img src="https://images.unsplash.com/photo-1598101463110-54638d8d2b4b" alt="Luxury Journaling" style="width: 100%; border-radius: 10px;">
-        <h3 style="font-size: 18px; margin-top: 10px;">🖋️ Silk Journaling</h3>
-        <p style="font-size: 15px; color: #444;">Write from a terrace in linen robes, with a glass of sparkling water, barefoot and undisturbed.</p>
+        <img src="images/rituals/journal-soft.jpg" alt="Journaling" style="width:100%;border-radius:10px;">
+        <h3 style="font-size:18px;margin-top:10px;">Ink & Rebellion</h3>
+        <p style="font-size:15px;color:#444;">Write what aches. Burn what dulls.</p>
       </div>
     </div>
   </section>
 
-  <!-- DOWNLOAD SECTION -->
+  <!-- DOWNLOADS -->
   <section id="downloads" class="ritual-cta">
-    <h2>✨ Claim Your Ritual</h2>
-    <p>Download your free soft-luxury ritual and start your alignment journey.</p>
-    <a href="INIZIA.pdf" class="btn" download>Download Now</a>
+    <h2>Claim Your Ritual</h2>
+    <p>Download your free pink punk ritual starter.</p>
+    <a href="downloads/BEGIN.pdf" class="btn" download>Download Now</a>
   </section>
 
-  <!-- WHAT YOU’LL FIND -->
+  <!-- WHAT YOU FIND -->
   <section class="what-you-find">
-    <h2>What You’ll Find Here</h2>
-    <ul>
-      <li>🌿 Self-care rituals to reclaim your inner space</li>
-      <li>🌍 Travel-inspired slow-luxury vibes</li>
-      <li>💬 Digital tools for your soft & smart empowerment</li>
+    <h2>What You Will Find Here</h2>
+    <ul style="list-style:none;padding-left:0;max-width:400px;margin:0 auto;">
+      <li>Soft rage rituals</li>
+      <li>Travel-based escape blueprints</li>
+      <li>Digital whispers for empowerment</li>
     </ul>
   </section>
 
   <!-- WORK WITH ME -->
-  <section style="padding: 50px 30px; text-align: center; background-color: #fff2f7;">
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 10px;">Work with me</h2>
-    <p style="font-size: 16px; max-width: 600px; margin: 0 auto;">
-      Open to collaborations with boutique hotels, luxury brands, retreats & artful minds.
-    </p>
-
-    <div style="margin-top: 40px; padding: 20px; background-color: #ffeef6; border-radius: 8px;">
-      <h3 style="font-size: 20px;">Want more rituals, journeys, and digital whispers?</h3>
-      <p style="font-size: 16px;">✨ Subscribe soon or follow the vibes on IG while we build your oasis.</p>
+  <section style="padding:50px 30px;text-align:center;background-color:#fff0f7;">
+    <h2 style="font-family:'Playfair Display',serif;font-size:22px;margin-bottom:10px;">Work with me</h2>
+    <p style="font-size:16px;max-width:600px;margin:0 auto;">Open to collaborations with boutique hotels, soft labels, retreats & bold minds.</p>
+    <div style="margin-top:40px;padding:20px;background-color:#ffe4f2;border-radius:8px;">
+      <h3 style="font-size:20px;">More rituals are coming</h3>
+      <p style="font-size:16px;">Subscribe or follow on IG while we build the pink cave.</p>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p style="font-style: italic; opacity: 0.8; font-size: 27.5px; text-align: center; margin-top: 20px;">
-      “This life, but softer.✧”
-    </p>
+    <p style="font-style:italic;opacity:0.8;font-size:27px;margin-top:20px;">This life, but louder ✧</p>
     <p>Follow us:</p>
     <a href="https://instagram.com/lunellavibes" target="_blank">Instagram</a> |
-    <a href="https://www.tiktok.com/@lunella.vibes?_t=ZN-8yKdRZgw3t8&_r=1" target="_blank">TikTok</a>
+    <a href="https://www.tiktok.com/@lunella.vibes" target="_blank">TikTok</a>
     <p>© 2025 Lunellavibes. All rights reserved.</p>
   </footer>
 
-  <!-- Dropdown Script -->
   <script>
     const dropdown = document.getElementById('dropdown');
-
-    dropdown.addEventListener('click', (e) => {
-      e.stopPropagation();
-      dropdown.classList.toggle('open');
-    });
-
-    window.addEventListener('click', () => {
-      dropdown.classList.remove('open');
-    });
+    dropdown.addEventListener('click', (e) => { e.stopPropagation(); dropdown.classList.toggle('open'); });
+    window.addEventListener('click', () => dropdown.classList.remove('open'));
   </script>
 </body>
 
 </html>
+
 
